@@ -1,4 +1,4 @@
-# Steam Top 100 – Economy Analyse Tool
+# Steam Top 100 – Datenanalyse mit Python und SQL
 
 Ein kleines Python/SQL-Projekt, das die aktuellen Top-100-Spiele auf Steam (nach Spielerzahl der letzten 2 Wochen) über die [SteamSpy API](https://steamspy.com/api.php) abruft, in einer SQLite-Datenbank speichert und mit SQL-Abfragen analysiert.
 
@@ -17,7 +17,7 @@ Entstanden als Lernprojekt in den Semesterferien, um praktische Erfahrung mit Py
 
 ## Erkenntnisse aus der Analyse
 
-- **Preis und Zustimmung hängen zusammen:** Kostenlose Spiele in der Top 100 haben eine durchschnittliche Zustimmungsquote von ca. 75 %, kostenpflichtige Spiele dagegen 85–92 %. Ein möglicher Grund: Free-to-Play-Titel monetarisieren häufig über Mikrotransaktionen, was bei einem Teil der Spieler auf Kritik stößt – wer dagegen bewusst für ein Spiel bezahlt, trifft oft schon eine informiertere Kaufentscheidung.
+- **Preis und Zustimmung hängen zusammen:** Kostenlose Spiele in der Top 100 erreichen eine durchschnittliche Zustimmungsquote von 74,7 %, günstige Spiele (<20€) 91,8 % und teurere Spiele (≥20€) 84,8 %. Die Analyse zeigt damit einen deutlichen Zusammenhang zwischen Preiskategorie und Zustimmungsquote. Eine mögliche Erklärung könnten Unterschiede in Monetarisierungsmodellen und Nutzererwartungen sein – dies lässt sich anhand des Datensatzes allein jedoch nicht eindeutig belegen, sondern zeigt nur eine Korrelation.
 - **Der Markt ist konzentriert:** Wenige etablierte Publisher sind mit mehreren Titeln gleichzeitig in der Top 100 vertreten – am auffälligsten Valve, das mit seinen eigenen Spielen (u. a. Counter-Strike, Team Fortress 2) einen überproportionalen Anteil einnimmt. Interessant dabei: Valve ist zugleich der Betreiber von Steam selbst, was zeigt, wie eng Plattform und eigene Inhalte hier verzahnt sind.
 
 ## Tech Stack
@@ -64,4 +64,4 @@ Ich komme aus dem Java-Umfeld und hatte SQL bisher nur aus der Theorie/Klausur g
 - Grundlegende und fortgeschrittenere SQL-Konzepte praktisch angewendet: `GROUP BY`, `HAVING`, `CASE WHEN`, Aggregatfunktionen
 - Wie man mit Python (`sqlite3`) mit einer relationalen Datenbank interagiert
 - Wie man eine externe REST-API anspricht (`requests`), JSON-Antworten verarbeitet und in eine Datenbank überführt
-- Typische Python-Unterschiede zu Java (z. B. Dictionaries, List Comprehensions, Duck Typing)
+- Typische Unterschiede zwischen Python und Java kennengelernt, z. B. Dictionaries, List Comprehensions und Duck Typing
