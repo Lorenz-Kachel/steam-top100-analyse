@@ -15,6 +15,10 @@ Entstanden als Lernprojekt in den Semesterferien, um praktische Erfahrung mit Py
    - Welche Publisher mehrere Spiele gleichzeitig in der Top 100 haben
 4. Stellt die Publisher-Verteilung als Balkendiagramm dar
 
+## Visualisierung
+
+![Publisher-Dominanz](publisher_dominanz.png)
+
 ## Erkenntnisse aus der Analyse
 
 - **Preis und Zustimmung hängen zusammen:** Kostenlose Spiele in der Top 100 erreichen eine durchschnittliche Zustimmungsquote von 74,7 %, günstige Spiele (<20€) 91,8 % und teurere Spiele (≥20€) 84,8 %. Die Analyse zeigt damit einen deutlichen Zusammenhang zwischen Preiskategorie und Zustimmungsquote. Eine mögliche Erklärung könnten Unterschiede in Monetarisierungsmodellen und Nutzererwartungen sein – dies lässt sich anhand des Datensatzes allein jedoch nicht eindeutig belegen, sondern zeigt nur eine Korrelation.
