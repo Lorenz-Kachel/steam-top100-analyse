@@ -15,6 +15,11 @@ Entstanden als Lernprojekt in den Semesterferien, um praktische Erfahrung mit Py
    - Welche Publisher mehrere Spiele gleichzeitig in der Top 100 haben
 4. Stellt die Publisher-Verteilung als Balkendiagramm dar
 
+## Erkenntnisse aus der Analyse
+
+- **Preis und Zustimmung hängen zusammen:** Kostenlose Spiele in der Top 100 haben eine durchschnittliche Zustimmungsquote von ca. 75 %, kostenpflichtige Spiele dagegen 85–92 %. Ein möglicher Grund: Free-to-Play-Titel monetarisieren häufig über Mikrotransaktionen, was bei einem Teil der Spieler auf Kritik stößt – wer dagegen bewusst für ein Spiel bezahlt, trifft oft schon eine informiertere Kaufentscheidung.
+- **Der Markt ist konzentriert:** Wenige etablierte Publisher sind mit mehreren Titeln gleichzeitig in der Top 100 vertreten – am auffälligsten Valve, das mit seinen eigenen Spielen (u. a. Counter-Strike, Team Fortress 2) einen überproportionalen Anteil einnimmt. Interessant dabei: Valve ist zugleich der Betreiber von Steam selbst, was zeigt, wie eng Plattform und eigene Inhalte hier verzahnt sind.
+
 ## Tech Stack
 
 - Python 3
@@ -25,19 +30,19 @@ Entstanden als Lernprojekt in den Semesterferien, um praktische Erfahrung mit Py
 ## Projektstruktur
 
 ```
-├── create_db.py       # Legt die SQLite-Datenbank und Tabelle an
-├── fetch_data.py       # Ruft die SteamSpy-API ab und befüllt die Datenbank
-├── analyse.py           # Führt die SQL-Analysen aus und erstellt das Diagramm
-├── requirements.txt      # Benötigte Python-Bibliotheken
-└── publisher_dominanz.png  # Beispiel-Output der Visualisierung
+├── create_db.py             # Legt die SQLite-Datenbank und Tabelle an
+├── fetch_data.py             # Ruft die SteamSpy-API ab und befüllt die Datenbank
+├── analysis.py                # Führt die SQL-Analysen aus und erstellt das Diagramm
+├── requirements.txt            # Benötigte Python-Bibliotheken
+└── publisher_dominanz.png        # Beispiel-Output der Visualisierung
 ```
 
 ## Setup & Ausführen
 
 ```bash
 # Repository klonen
-git clone https://github.com/DEIN-USERNAME/DEIN-REPO-NAME.git
-cd DEIN-REPO-NAME
+git clone https://github.com/Lorenz-Kachel/steam-top100-analyse.git
+cd steam-top100-analyse
 
 # Abhängigkeiten installieren
 pip install -r requirements.txt
@@ -49,7 +54,7 @@ python create_db.py
 python fetch_data.py
 
 # Analysen ausführen
-python analyse.py
+python analysis.py
 ```
 
 ## Was ich dabei gelernt habe
